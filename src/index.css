@@ -1,0 +1,61 @@
+/* Tailwind base import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: custom root variables */
+:root {
+  --brand-color: #1e40af; /* Blue brand color */
+  --brand-light: #e0f2fe; /* Light accent */
+  --text-primary: #1e293b; /* Slate 800 */
+}
+
+/* Global body styling */
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-slate-900;
+}
+
+/* Links */
+a {
+  @apply font-medium text-blue-600 no-underline hover:text-blue-800;
+}
+
+/* Buttons */
+button {
+  @apply rounded-2xl border border-transparent px-4 py-2 bg-blue-900 text-white font-medium hover:opacity-90 transition;
+}
+
+/* Forms */
+input, textarea {
+  @apply border border-slate-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+/* Utility for sections */
+section {
+  @apply py-14;
+}
+
+/* Header styling */
+.header {
+  @apply flex justify-between items-center px-6 py-4;
+}
+.logo {
+  @apply text-xl font-bold text-blue-900 z-10;
+}
+.nav {
+  @apply flex space-x-6;
+}
+
+/* Contact section styling */
+.contact-section {
+  @apply mt-10;
+}
+.contact-section h1 {
+  @apply z-0;
+}
