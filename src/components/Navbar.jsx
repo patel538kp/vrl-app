@@ -10,7 +10,7 @@ export default function Navbar() {
           {/* <div className="bg-blue-900 text-white p-2 rounded">
             <Truck className="w-5 h-5" />
           </div> */}
-          <img src="/src/assets/VRL_Black.png" alt="Vidhi Road Lines Logo" className="w-20 h-15" />
+          <img src="src/assets/VRL_Black.png" alt="Vidhi Road Lines Logo" className="w-20 h-15" />
           <span className="font-bold text-lg">Vidhi Roadlines</span>
         </div>
         <nav className="hidden md:flex gap-6">
